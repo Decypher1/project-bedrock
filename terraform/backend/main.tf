@@ -2,7 +2,7 @@ resource "aws_s3_bucket" "terraform_state" {
   bucket = "bedrock-terraform-state-alt-soe-025-3672"
 
   tags = {
-    Name = "Terraform State Bucket"
+    Name    = "Terraform State Bucket"
     Project = "karatu-2025-capstone"
   }
 }
