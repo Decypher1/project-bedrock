@@ -50,3 +50,18 @@ module "rds_mysql" {
 
   project_tag = "karatu-2025-capstone"
 }
+
+#RDS POSTGRES
+module "rds_postgres" {
+  source = "./modules/rds-postgres"
+
+  private_subnet_ids = module.vpc.private_subnet_ids
+
+  vpc_id = module.vpc.vpc_id
+
+  cluster_security_group_id = module.eks.cluster_security_group_id
+
+  db_password = module.secrets_manager.orders_password
+
+  project_tag = "karatu-2025-capstone"
+}

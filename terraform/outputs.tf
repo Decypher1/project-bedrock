@@ -29,3 +29,7 @@ output "cluster_security_group_id" {
 output "catalog_db_endpoint" {
   value = module.rds_mysql.endpoint
 }
+
+output "orders_db_endpoint" {
+  value = module.rds_postgres.endpoint
+}
