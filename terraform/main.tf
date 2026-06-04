@@ -30,3 +30,9 @@ module "eks" {
   private_subnet_ids = module.vpc.private_subnet_ids
   public_subnet_ids  = module.vpc.public_subnet_ids
 }
+
+module "secrets_manager" {
+  source = "./modules/secrets-manager"
+
+  project_tag = "karatu-2025-capstone"
+}
