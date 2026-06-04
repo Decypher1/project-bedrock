@@ -20,3 +20,13 @@ module "vpc" {
     "us-east-1b"
   ]
 }
+
+module "eks" {
+  source = "./modules/eks"
+
+  cluster_name    = "project-bedrock-cluster"
+  cluster_version = "1.34"
+
+  private_subnet_ids = module.vpc.private_subnet_ids
+  public_subnet_ids  = module.vpc.public_subnet_ids
+}
