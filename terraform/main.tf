@@ -36,3 +36,17 @@ module "secrets_manager" {
 
   project_tag = "karatu-2025-capstone"
 }
+
+module "rds_mysql" {
+  source = "./modules/rds-mysql"
+
+  private_subnet_ids = module.vpc.private_subnet_ids
+
+  vpc_id = module.vpc.vpc_id
+
+  cluster_security_group_id = module.eks.cluster_security_group_id
+
+  db_password = module.secrets_manager.catalog_password
+
+  project_tag = "karatu-2025-capstone"
+}
