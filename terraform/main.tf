@@ -65,3 +65,9 @@ module "rds_postgres" {
 
   project_tag = "karatu-2025-capstone"
 }
+
+module "dynamodb" {
+  source = "./modules/dynamodb"
+
+  project_tag = "karatu-2025-capstone"
+}

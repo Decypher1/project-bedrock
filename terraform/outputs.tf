@@ -33,3 +33,7 @@ output "catalog_db_endpoint" {
 output "orders_db_endpoint" {
   value = module.rds_postgres.endpoint
 }
+
+output "carts_table_name" {
+  value = module.dynamodb.table_name
+}
