@@ -1,0 +1,20 @@
+app:
+  persistence:
+    provider: postgres
+
+    endpoint: "orders-db.c89sickwyqkz.us-east-1.rds.amazonaws.com:5432"
+
+    database: orders
+
+    secret:
+      username: ordersadmin
+      password: "cg7QQTT7QLBxjwyL"
+
+  messaging:
+    provider: rabbitmq
+
+rabbitmq:
+  create: true
+
+postgresql:
+  create: false

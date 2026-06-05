@@ -1,0 +1,14 @@
+app:
+  persistence:
+    provider: mysql
+    endpoint: "catalog-db.c89sickwyqkz.us-east-1.rds.amazonaws.com:3306"
+
+    secret:
+      username: catalogadmin
+      password: "j0WjqD5RnpuZd0ga"
+
+  search:
+    enabled: false
+
+mysql:
+  create: false

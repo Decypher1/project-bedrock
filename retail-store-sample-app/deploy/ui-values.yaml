@@ -1,0 +1,9 @@
+app:
+  endpoints:
+    catalog: http://catalog.retail-app.svc.cluster.local
+    carts: http://carts.retail-app.svc.cluster.local
+    orders: http://orders.retail-app.svc.cluster.local
+    checkout: http://checkout.retail-app.svc.cluster.local
+
+service:
+  type: ClusterIP

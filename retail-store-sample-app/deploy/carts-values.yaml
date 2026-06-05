@@ -1,0 +1,9 @@
+app:
+  persistence:
+    provider: dynamodb
+
+    dynamodb:
+      tableName: carts
+
+dynamodb:
+  create: false
