@@ -22,7 +22,7 @@ The solution demonstrates modern cloud engineering practices including:
 Place the architecture image inside a `docs/` folder and reference it as shown below:
 
 ```markdown
-![Project Architecture](docs/project-bedrock-architecture.png)
+![Project Architecture](./docs/project-bedrock-architecture.png)
 ```
 
 ---
