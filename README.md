@@ -19,11 +19,9 @@ The solution demonstrates modern cloud engineering practices including:
 
 ## Architecture Diagram
 
-Place the architecture image inside a `docs/` folder and reference it as shown below:
 
-```markdown
 ![Project Architecture](./docs/project-bedrock-architecture.png)
-```
+
 
 ---
 
