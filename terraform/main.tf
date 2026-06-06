@@ -71,3 +71,12 @@ module "dynamodb" {
 
   project_tag = "karatu-2025-capstone"
 }
+
+#serverless
+module "serverless" {
+  source = "./modules/serverless"
+
+  bucket_name = "bedrock-assets-alt-soe-025-3672"
+
+  project_tag = "karatu-2025-capstone"
+}

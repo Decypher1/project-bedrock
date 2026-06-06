@@ -37,3 +37,7 @@ output "orders_db_endpoint" {
 output "carts_table_name" {
   value = module.dynamodb.table_name
 }
+
+output "assets_bucket_name" {
+  value = module.serverless.assets_bucket_name
+}
